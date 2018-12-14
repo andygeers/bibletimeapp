@@ -30,7 +30,6 @@ var chunks = [
   ['Joel', 0, 12],
   ['Amos', 0, 24],
   ['Obadiah', 0, 4],
-  ['Obadiah', 0, 4],
   ['Jonah', 0, 8],
   ['Micah', 0, 18],
   ['Nahum', 0, 7],
@@ -71,7 +70,7 @@ var BibleChunks = {
     for (var i in chunks) {
       var chunk = chunks[i];
       var totalMins = chunk[1] * 60 + chunk[2];
-      if (totalMins < minutes) {
+      if (totalMins <= minutes) {
         available.push(chunk);
       }
     }
