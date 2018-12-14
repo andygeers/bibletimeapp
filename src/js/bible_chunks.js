@@ -75,7 +75,13 @@ var BibleChunks = {
         available.push(chunk);
       }
     }
-    return available;
+
+    // Sort by hours then minutes
+    available.sort(function(a, b) {
+      return ((b[1] * 60 + b[2]) - (a[1] * 60 + a[2]))
+    });
+
+    return available.slice(0, 5);
   }
 }
 
