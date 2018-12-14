@@ -19,7 +19,7 @@ var BibleChunks = {
       return ((b[1] * 60 + b[2]) - (a[1] * 60 + a[2]))
     });
 
-    return available;
+    return available.slice(0, 5);
   }
 }
 
