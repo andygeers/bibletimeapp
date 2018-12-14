@@ -1,0 +1,16 @@
+{
+  "name": "bibletime",
+  "version": "1.0.0",
+  "description": "A simple web app to help people find time to read the Bible",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Andy Geers & Nicholas D",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
