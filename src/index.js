@@ -5,7 +5,7 @@ import 'bootstrap';
 import './styles/index.scss';
 
 const Index = () => {
-  return <div>Hello React!</div>;
+  return <div className="container-fluid">Hello React!</div>;
 };
 
 ReactDOM.render(<Index />, document.getElementById("index"));
