@@ -9,26 +9,7 @@ var Dragdealer = require('dragdealer');
 var $ = require('jquery');
 
 var BibleChunks = require('./js/bible_chunks.js');
-
-var formatTime = function(hours, minutes) {
-  var minsLabel;
-  if (minutes == 1) {
-    minsLabel = minutes + ' minute';
-  } else {
-    minsLabel = minutes + ' minutes';
-  }
-
-  var label = "";
-  if (hours > 1) {
-    label = hours + " hours " + minsLabel;
-  } else if (hours == 1) {
-    label = hours + " hour " + minsLabel;
-  } else {
-    label = minsLabel;
-  }
-
-  return label;
-}
+var formatTime = require('./js/format_time.js');
 
 class BibleChunk extends React.Component {
   render() {
@@ -81,7 +62,7 @@ class BibleTime extends React.Component {
 
         <div id="timeLabel"></div>
 
-        <div id="available">
+        <div id="available" className="card" style={ { width: "18rem" } }>
           <ul>
             {this.state.available.map((chunk) =>
               <BibleChunk name={chunk[0]} hours={chunk[1]} minutes={chunk[2]} />)}

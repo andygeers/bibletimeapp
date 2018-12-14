@@ -14,11 +14,13 @@ body {
 
     height: 60px;
     width: 740px;
+    max-width: 80%;
     border-radius: 3px;
     margin: 20px auto;
 
     .handle {
       height: 60px;
+      max-width: 20%;
       line-height: 60px;
       border-radius: 3px;
     }
@@ -28,6 +30,10 @@ body {
       font-size: 30px;
       font-weight: bold;
     }
+  }
+
+  div#available {
+    margin: 0 auto;
   }
 
 }
