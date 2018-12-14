@@ -11,10 +11,20 @@ var $ = require('jquery');
 var BibleChunks = require('./js/bible_chunks.js');
 var formatTime = require('./js/format_time.js');
 
+class BibleChunkLink extends React.Component {
+  render() {
+    var book_name_encoded = this.props.passage;
+
+    return (
+      <a href={"https://www.biblegateway.com/passage/?search=" + book_name_encoded+ "%201-200&version=ESVUK"} target="_blank">{this.props.passage}</a>
+    )
+  }
+}
+
 class BibleChunk extends React.Component {
   render() {
     return (
-      <li key={this.props.name}>{this.props.name} - {formatTime(this.props.hours, this.props.minutes)}</li>
+      <li key={this.props.name}><BibleChunkLink passage={this.props.name}/> - {formatTime(this.props.hours, this.props.minutes)}</li>
     )
   }
 }
