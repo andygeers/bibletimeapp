@@ -1,5 +1,13 @@
 ## Hello world!
 
+Inspired by this blog post:
+
+https://www.crossway.org/articles/infographic-you-can-read-more-of-the-bible-than-you-think/
+
+
+## To get going:
+
+`npm install`
 `npm run start`
 
 
