@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   background: #AAAAFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   section#index {
     text-align: center;
@@ -8,4 +9,49 @@ body {
     padding-bottom: 10px;
     color: white;
   }
+
+  #just-a-slider {
+
+    height: 60px;
+    width: 740px;
+    border-radius: 3px;
+    margin: 20px auto;
+
+    .handle {
+      height: 60px;
+      line-height: 60px;
+      border-radius: 3px;
+    }
+
+    .value {
+      padding: 0 0 0 5px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.dragdealer {
+  position: relative;
+  height: 30px;
+  background: #EEE;
+}
+.dragdealer .handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.dragdealer .red-bar {
+  width: 100px;
+  height: 30px;
+  background: #CC0000;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.dragdealer .disabled {
+  background: #898989;
 }
