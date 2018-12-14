@@ -34,6 +34,15 @@ body {
 
   div#available {
     margin: 0 auto;
+    margin-top: 50px;
+
+    li {
+      text-align: left;
+    }
+  }
+
+  div#footer {
+    margin-top: 50px;
   }
 
 }
